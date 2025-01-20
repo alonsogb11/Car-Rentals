@@ -3,8 +3,11 @@ Se trata del proyecto final de la materia **Desarrollo de software con tecnolog�
 
 ## _Autores_ 💡
 **Alonso Genao Bernabé | A00114295**
+
 **Axel Xavier Grullón**
+
 **Ruby**
+
 **Carl**
 
 ## _Instalción_ 📦
