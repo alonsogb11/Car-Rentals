@@ -2,13 +2,13 @@
 Se trata del proyecto final de la materia **Desarrollo de software con tecnología propietaria I (ISO-605)** de la Universidad APEC, en el cual trabajaremos todo el cuatrimestre. Está hecho con **C++** utilizando Visual Studio Community 2022.
 
 ## _Autores_ 💡
-**Alonso Genao Bernabé | A00114295**
+**Alonso Genao | A00114295**
 
-**Axel Xavier Grullón**
+**Axel Grullón | _Matrícula_**
 
-**Ruby**
+**Ruby Rosario | _Matrícula_**
 
-**Carl**
+**Carl Weasman | _Matrícula_**
 
 ## _Instalción_ 📦
 _N/A_
