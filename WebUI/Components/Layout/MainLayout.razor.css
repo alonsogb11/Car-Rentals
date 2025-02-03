@@ -1,0 +1,194 @@
+/* Layout general */
+body {
+    display: block; /* Cambié a bloque para permitir que el contenido se apile */
+    min-height: 100vh;
+    margin: 0;
+    position: relative; /* Esto es importante para que el contenido posterior se ubique debajo */
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 0px;
+}
+
+.prmry-btn {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.prmry-btn.active {
+    color: #d50500;
+}
+
+.logo {
+    cursor:pointer;
+    width:110px;
+    height:auto;
+}
+
+.nav_links {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin: 0px;
+}
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 18px;
+    }
+
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+
+        .nav_links li a:hover {
+            color: #d50500;
+        }
+
+
+
+.scndry-btn {
+    background-image: linear-gradient( to right, #D65050 0%, #D50500 50%, #7c0202 100% );
+    background-size: 200% auto;
+    transition: 0.5s ease;
+    padding: 9px 25px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+    .scndry-btn:hover {
+        background-position: right center;
+    }
+
+    @media (min-width: 950px) {
+        .page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 1920px;
+        height: 100px;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row, article {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+        #main-header {
+            position: absolute; /* Se coloca encima del contenido */
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            color: white;
+            background-color: transparent;
+            padding: 10px 2%;
+            text-align: center;
+            /*cambio*/
+            margin-left: 0px; /* Márgenes a la izquierda */
+            margin-right: 0px; /* Márgenes a la derecha */
+            z-index: 3; /* Hace que el header esté por encima del resto del contenido */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer {
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+.loguito {
+    height: 70px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/*cambios*/
+
+.container {
+    
+    display: flex; /* Necesario para gap en flexbox */
+    align-items: center;
+    gap: 200px; /* Define el espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 20px 10px;
+    padding: 0px;
+}
+.footer-links {
+    align-items: center;
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+}
+    .footer-links h5 {
+        font-weight: bold;
+    }
+.container-copyright {
+    margin-left: 50px; /* Márgenes a la izquierda */
+    margin-right: 50px; /* Márgenes a la derecha */
+    border-top: 1px solid white; /* Borde superior blanco de 2px */
+    margin-top: 10px;
+    padding: 0px 340px;
+}
+    .container-copyright p {
+      margin-top:20px;
+    }
+
+.footer{
+    padding:50px;
+}
+
+#mgl {
+    margin: 0px;
+}

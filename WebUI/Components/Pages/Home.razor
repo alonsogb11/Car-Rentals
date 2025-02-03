@@ -1,0 +1,111 @@
+﻿@page "/"
+
+<PageTitle>TurboZone - Home</PageTitle>
+
+<h1 class="slogan" id="slogan1">La mejor manera de <br /><span id="slogan2">conducir tu futuro</span></h1>
+
+<img class="img" src="Images/New TurboZone Home Page 1.png" alt="imagen home"/>
+
+<a class="bsq-boton-busq-carro" href="#">Buscar auto</a>
+
+<div class="barra_busqueda_carro">
+    <div class="img-busqueda-jeje">
+        <img class="imgbsqdcrro" src="Images/searching-car_75823.png" alt="busqueda de carro"/>
+        <p>Búsqueda</p>
+    </div>
+    <div class="filtros">
+        <div class="estado">
+            <label for="Estado">Estado:</label>
+            <select name="Estado" id="estado">
+                <option value="nuevo">Nuevo</option>
+                <option value="usado">Usado</option>
+            </select>
+        </div>
+
+        <div class="marca">
+            <label for="Estado">Marca:</label>
+            <select name="Estado" id="estado">
+                <option value="nuevo">Nuevo</option>
+                <option value="usado">Usado</option>
+            </select>
+        </div>
+
+        <div class="modelo">
+            <label for="Estado">Modelo:</label>
+            <select name="Estado" id="estado">
+                <option value="nuevo">Nuevo</option>
+                <option value="usado">Usado</option>
+            </select>
+        </div>
+
+        <div class="anno">
+            <label for="Estado">Año:</label>
+            <select name="Estado" id="estado">
+                <option value="nuevo">1980s</option>
+                <option value="usado">1990s</option>
+                <option value="nuevo">2000s</option>
+                <option value="usado">2010s</option>
+                <option value="nuevo">2020s</option>
+            </select>
+        </div>
+    </div>
+    <div class="button-buscar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="icon-search">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+        <imput type="submit" value="Buscar"><img />Buscar</imput>
+    </div>
+</div>
+
+<div class="sgnd-area">
+    <div class="img-dgnd-area">
+        <img class="imglxs" src="Images/New TurboZone Home Page 2.png" alt="foto lexus" />
+    </div>
+    <div class="segunda_area">
+        <h1 class="titulo_area2">Tu portal hacia el <span>mejor</span> <br /><span>concesionario</span> del país</h1>
+        <p class="texto_area2">En TurboZone, priorizamos la experiencia del cliente, asegurando que cada <br />compra sea memorable con un servicio excepcional y un acompañamiento <br />personalizado en cada etapa del proceso.</p>
+        <div class="contenedor-checklist">
+            <div class="checklist-item">
+                <img class="checklist-icon" src="Images/checklist.png" /><p class="checklist-text">Amplia variedad de vehículos</p>
+            </div>
+            <div class="checklist-item">
+                <img class="checklist-icon" src="Images/checklist.png" /><p class="checklist-text">Servicio al cliente excepcional</p>
+            </div>
+            <div class="checklist-item">
+                <img class="checklist-icon" src="Images/checklist.png" /><p class="checklist-text">Compromiso con la calidad</p>
+            </div>
+        </div>
+        <a class="lrms" href="#"><button class="lrm">Leer más</button></a>
+    </div>
+</div>
+
+<div class="tercera-seccion">
+    <h1 class="titulo-seccion3">Marcas populares</h1>
+    <a class="vrms" href="#"><button class="vrm">Ver más</button></a>
+</div>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-slide">
+            <img src="Images/Lexus.png" alt="Imagen 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="Images/Kia.png" alt="Imagen 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="Images/Porsche.png" alt="Imagen 3">
+        </div>
+        <div class="carousel-slide">
+            <img src="Images/Ford.png" alt="Imagen 4">
+        </div>
+        <div class="carousel-slide">
+            <img src="Images/Maserati.png" alt="Imagen 5">
+        </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <button class="carousel-button prev" aria-label="Anterior">❮</button>
+    <button class="carousel-button next" aria-label="Siguiente">❯</button>
+</div>
+
+<script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js"></script>

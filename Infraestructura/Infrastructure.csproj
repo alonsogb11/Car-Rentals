@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Clases\**" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="DependencyInjection\**" />
+    <Compile Remove="IndependencyInjection\**" />
+    <Compile Remove="Repos\**" />
+    <EmbeddedResource Remove="Clases\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="DependencyInjection\**" />
+    <EmbeddedResource Remove="IndependencyInjection\**" />
+    <EmbeddedResource Remove="Repos\**" />
+    <None Remove="Clases\**" />
+    <None Remove="Data\**" />
+    <None Remove="DependencyInjection\**" />
+    <None Remove="IndependencyInjection\**" />
+    <None Remove="Repos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

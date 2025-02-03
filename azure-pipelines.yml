@@ -1,0 +1,20 @@
+trigger:
+- main  # Cambia esto al nombre de tu rama principal
+
+pool:
+  vmImage: 'windows-latest'  # O usa 'ubuntu-latest' si prefieres Linux
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '7.x'  # Cambia a la versión de .NET Core/SDK que uses
+
+- script: |
+    dotnet restore
+    dotnet build --configuration Release
+  displayName: 'Restaurar y Compilar Proyecto'
+
+- script: |
+    dotnet ef database update
+  displayName: 'Actualizar Base de Datos (Opcional, si usas EF Core)'
