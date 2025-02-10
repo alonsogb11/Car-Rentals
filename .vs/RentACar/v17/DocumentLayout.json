@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\views\\tipovehiculo\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\tipovehiculo\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\controllers\\tipovehiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\controllers\\tipovehiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\views\\tipovehiculo\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\tipovehiculo\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\views\\tipovehiculo\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\tipovehiculo\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 252,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\TipoVehiculo\\Editar.cshtml",
+              "RelativeDocumentMoniker": "RentACar\\Views\\TipoVehiculo\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\TipoVehiculo\\Editar.cshtml",
+              "RelativeToolTip": "RentACar\\Views\\TipoVehiculo\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T19:22:58.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Program.cs",
+              "RelativeDocumentMoniker": "RentACar\\Program.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Program.cs",
+              "RelativeToolTip": "RentACar\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T17:54:16.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Nuevo.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\TipoVehiculo\\Nuevo.cshtml",
+              "RelativeDocumentMoniker": "RentACar\\Views\\TipoVehiculo\\Nuevo.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\TipoVehiculo\\Nuevo.cshtml",
+              "RelativeToolTip": "RentACar\\Views\\TipoVehiculo\\Nuevo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T17:08:32.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipoVehiculoController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Controllers\\TipoVehiculoController.cs",
+              "RelativeDocumentMoniker": "RentACar\\Controllers\\TipoVehiculoController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Controllers\\TipoVehiculoController.cs",
+              "RelativeToolTip": "RentACar\\Controllers\\TipoVehiculoController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T16:41:47.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lista.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\TipoVehiculo\\Lista.cshtml",
+              "RelativeDocumentMoniker": "RentACar\\Views\\TipoVehiculo\\Lista.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\TipoVehiculo\\Lista.cshtml",
+              "RelativeToolTip": "RentACar\\Views\\TipoVehiculo\\Lista.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAACrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T17:38:42.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
