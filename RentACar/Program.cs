@@ -26,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=TipoVehiculo}/{action=Lista}/{id?}");
+    pattern: "{controller=Modelo}/{action=Lista}/{id?}");
 
 app.Run();

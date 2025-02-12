@@ -4,12 +4,12 @@
 @{
 }
 
-@model List<RentACar.Models.TipoVehiculo>;
+@model List<RentACar.Models.Marca>;
 
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
-        <h2>Tipos de vehículos</h2>
-        <a asp-controller="TipoVehiculo" asp-action="Nuevo" class="btn btn-primary mb-3">Nuevo</a>
+        <h2>Marcas</h2>
+        <a asp-controller="Marca" asp-action="Nuevo" class="btn btn-primary mb-3">Nuevo</a>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -20,15 +20,15 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach(var item in Model)
+                @foreach (var item in Model)
                 {
                     <tr>
                         <td>@item.Id</td>
                         <td>@item.Descripcion</td>
                         <td>@item.Estado</td>
                         <td>
-                            <a asp-controller="TipoVehiculo" asp-action="Editar" asp-route-Id="@item.Id" class="btn btn-success">Editar</a>
-                            <a asp-controller="TipoVehiculo" asp-action="Eliminar" asp-route-Id="@item.Id" onclick="return confirmar()" class="btn btn-danger">Eliminar</a>
+                            <a asp-controller="Marca" asp-action="Editar" asp-route-Id="@item.Id" class="btn btn-success">Editar</a>
+                            <a asp-controller="Marca" asp-action="Eliminar" asp-route-Id="@item.Id" onclick="return confirmar()" class="btn btn-danger">Eliminar</a>
                         </td>
                     </tr>
                 }
@@ -37,10 +37,10 @@
     </div>
 </div>
 
-@section Scripts{
+@section Scripts {
     <script>
         function confirmar() {
-            return confirm("¿Estás seguro de eliminar este tipo de vehículo?")
+            return confirm("¿Estás seguro de eliminar esta marca?")
         }
     </script>
 }

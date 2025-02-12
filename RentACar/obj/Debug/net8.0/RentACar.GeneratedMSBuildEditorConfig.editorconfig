@@ -26,12 +26,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Marca/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Marca/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcTGlzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Marca/Nuevo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcTnVldm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Modelo/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Modelo/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXExpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Modelo/Nuevo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXE51ZXZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/TipoCombustible/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0NvbWJ1c3RpYmxlXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/TipoCombustible/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0NvbWJ1c3RpYmxlXExpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/TipoCombustible/Nuevo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0NvbWJ1c3RpYmxlXE51ZXZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MSI/Source/Repos/Proyecto-Propietaria/RentACar/Views/TipoVehiculo/Editar.cshtml]

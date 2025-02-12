@@ -3,10 +3,6 @@ using RentACar.Data;
 using RentACar.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace RentACar.Controllers
 {
@@ -77,7 +73,7 @@ namespace RentACar.Controllers
         {
             TipoVehiculo tipoVehiculo = await _appDbContext.TipoVehiculos.FirstAsync(e => e.Id == Id);
 
-            _appDbContext.TipoVehiculos.Remove(tipoVehiculo); 
+            _appDbContext.TipoVehiculos.Remove(tipoVehiculo);
             await _appDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Lista));
         }
