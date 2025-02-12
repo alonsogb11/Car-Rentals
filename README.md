@@ -4,9 +4,9 @@ Se trata del proyecto final de la materia **Desarrollo de software con tecnolog�
 ## _Autores_ 💡
 **Alonso Genao | A00114295**
 
-**Axel Grullón | _Matrícula_**
+**Axel Grullón | A00111051**
 
-**Ruby Rosario | _Matrícula_**
+**Ruby Rosario | A00105745**
 
 **Carl Weasman | _Matrícula_**
 
