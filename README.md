@@ -8,7 +8,7 @@ Se trata del proyecto final de la materia **Desarrollo de software con tecnolog�
 
 **Ruby Rosario | A00105745**
 
-**Carl Weasman | _Matrícula_**
+**Carl Weasman | A00111246**
 
 ## _Instalción_ 📦
 _N/A_
