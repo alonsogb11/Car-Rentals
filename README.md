@@ -1,5 +1,5 @@
 ## _Descripción_ ✏️
-Se trata del proyecto final de la materia **Desarrollo de software con tecnología propietaria I (ISO-605)** de la Universidad APEC, en el cual trabajaremos todo el cuatrimestre. Está hecho con **HTML, CSS y C#** utilizando **.NET 8.0** y **Blazor WebAssembly** con **Visual Studio Community 2022**.
+Se trata del proyecto final de la materia **Desarrollo de software con tecnología propietaria I (ISO-605)** de la Universidad APEC, en el cual trabajaremos todo el cuatrimestre. Está hecho con **HTML, CSS, C# y un poquito de JavaScript** utilizando **.NET 8.0** y **ASP.NET (Model-View-Controller)** con **Visual Studio Community 2022**.
 
 ## _Autores_ 💡
 **Alonso Genao | A00114295**
