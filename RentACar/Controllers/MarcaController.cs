@@ -3,10 +3,11 @@ using RentACar.Data;
 using RentACar.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RentACar.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class MarcaController : Controller
     {
         private readonly AppDBContext _appDbContext;
@@ -60,7 +61,6 @@ namespace RentACar.Controllers
             return View(marca);
         }
 
-        // POST: Marca/Editar
         [HttpPost]
         public async Task<IActionResult> Editar(Marca marca)
         {
@@ -69,7 +69,6 @@ namespace RentACar.Controllers
             return RedirectToAction(nameof(Lista));
         }
 
-        // GET: Marca/Eliminar/5
         [HttpGet]
         public async Task<IActionResult> Eliminar(int Id)
         {

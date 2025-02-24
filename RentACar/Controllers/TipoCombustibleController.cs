@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using RentACar.Data;
 using RentACar.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RentACar.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class TipoCombustibleController : Controller
     {
         private readonly AppDBContext _appDbContext;

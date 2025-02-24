@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\MSI\\Source\\Repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\images\\carRentalsLogo.png",
+      "PackagePath": "staticwebassets\\images\\carRentalsLogo.png"
+    },
+    {
       "Id": "C:\\Users\\MSI\\Source\\Repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
