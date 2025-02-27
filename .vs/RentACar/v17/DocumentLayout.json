@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\views\\vehiculo\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\vehiculo\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|solutionrelative:rentacar\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1A7B437-3344-47AB-85CC-8FC9470DD955}|RentACar\\RentACar.csproj|c:\\users\\msi\\source\\repos\\proyecto-propietaria\\rentacar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -43,27 +59,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "RentACar\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "RentACar\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "Title": "bootstrap-utilities.css",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+              "RelativeDocumentMoniker": "RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+              "RelativeToolTip": "RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+              "ViewState": "AgIAAFoEAAAAAAAAAAAIwHAEAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-24T04:29:12.938Z",
+              "WhenOpened": "2025-02-27T05:27:21.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeDocumentMoniker": "RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeToolTip": "RentACar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ViewState": "AgIAAC0dAAAAAAAAAAAQwEIdAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-27T05:24:57.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lista.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\Vehiculo\\Lista.cshtml",
+              "RelativeDocumentMoniker": "RentACar\\Views\\Vehiculo\\Lista.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\Vehiculo\\Lista.cshtml",
+              "RelativeToolTip": "RentACar\\Views\\Vehiculo\\Lista.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T21:42:10.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RentACar\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RentACar\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T21:38:01.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "RentACar\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "RentACar\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAACXAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAkwI8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-24T04:21:59.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "RentACar\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "RentACar\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwH4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-24T20:12:59.278Z",
               "EditorCaption": ""
             }
           ]
