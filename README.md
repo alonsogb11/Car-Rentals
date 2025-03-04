@@ -2,7 +2,7 @@
 Proyecto final de la materia **Desarrollo de software con tecnología propietaria I (ISO-605)** de la Universidad APEC, en el cual trabajaremos todo el cuatrimestre. Se trata de una **Aplicación Web** de un concecionario de autos de renta, **CarRentals**.
 
 ## _Autores_ 💡
-**Alonso Genao | A00114295 | Back-End y WebUI**
+**Alonso Genao | A00114295 | Back-End, WebUI y Front-End**
 
 **Axel Grullón | A00111051 | Documentación**
 
