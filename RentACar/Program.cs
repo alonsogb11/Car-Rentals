@@ -40,6 +40,20 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.Use(async (context, next) =>
+{
+    if (!context.User.Identity.IsAuthenticated &&
+        !context.Request.Path.StartsWithSegments("/Identity/Account/Login") &&
+        !context.Request.Path.StartsWithSegments("/Identity/Account/Register") &&
+        !context.Request.Path.StartsWithSegments("/Identity/Account/ForgotPassword") &&
+        !context.Request.Path.StartsWithSegments("/Identity/Account/ResetPassword"))
+    {
+        context.Response.Redirect("/Identity/Account/Login");
+        return;
+    }
+    await next();
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

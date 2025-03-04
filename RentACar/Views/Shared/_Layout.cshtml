@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Car Rentals</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RentACar.styles.css" asp-append-version="true" />
     <link rel="icon" type="image/x-icon" href="~/favicon.ico">
@@ -21,36 +22,65 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="logo-navbar" src="~/images/carRentalsDGrey.png" alt="Logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="vehiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Vehículos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="vehiculosDropdown">
-                                <li><a class="dropdown-item" asp-controller="TipoVehiculo" asp-action="Lista">Tipo Vehículo</a></li>
-                                <li><a class="dropdown-item" asp-controller="Marca" asp-action="Lista">Marca</a></li>
-                                <li><a class="dropdown-item" asp-controller="Modelo" asp-action="Lista">Modelo</a></li>
-                                <li><a class="dropdown-item" asp-controller="TipoCombustible" asp-action="Lista">Tipo Gasolina</a></li>
-                                <li><a class="dropdown-item" asp-controller="Vehiculo" asp-action="Lista">Vehículos</a></li>
-                            </ul>
+                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Procesos administrativos</a>
+                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "VehiclesPage" ? "active" : "")" asp-area="" asp-controller="VehiclesPage" asp-action="Vehiculos">Vehículos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "OfficesPage" ? "active" : "")" asp-area="" asp-controller="OfficesPage" asp-action="Oficinas">Oficinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "ContacUsPage" ? "active" : "")" asp-area="" asp-controller="ContactUsPage" asp-action="Contactanos">Contáctanos</a>
+                        </li>
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+                            var roles = await UserManager.GetRolesAsync(user);
+
+                            if (roles.Contains("Admin"))
+                            {
+                                <li class="nav-item dropdown @(new[] {"TipoVehiculo", "Marca", "Modelo", "TipoCombustible", "Vehiculo"}.Contains(ViewContext.RouteData.Values["Controller"]?.ToString()) ? "active-dropdown" : "")">
+                                    <a class="nav-link dropdown-toggle" href="#" id="vehiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Vehículos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="vehiculosDropdown">
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "TipoVehiculo" ? "active" : "")" asp-controller="TipoVehiculo" asp-action="Lista">Tipos de vehículo</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Marca" ? "active" : "")" asp-controller="Marca" asp-action="Lista">Marcas</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Modelo" ? "active" : "")" asp-controller="Modelo" asp-action="Lista">Modelos</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "TipoCombustible" ? "active" : "")" asp-controller="TipoCombustible" asp-action="Lista">Tipos de gasolina</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Vehiculo" ? "active" : "")" asp-controller="Vehiculo" asp-action="Lista">Vehículos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown @(new[] {"Cliente", "Empleado", "ProcesoRentaDevolucion", "Inspeccion"}.Contains(ViewContext.RouteData.Values["Controller"]?.ToString()) ? "active-dropdown" : "")">
+                                    <a class="nav-link dropdown-toggle" href="#" id="procesosAdministrativosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Datos administrativos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="procesosAdministrativosDropdown">
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Cliente" ? "active" : "")" asp-controller="Cliente" asp-action="Lista">Clientes</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Empleado" ? "active" : "")" asp-controller="Empleado" asp-action="Lista">Empleados</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "ProcesoRentaDevolucion" ? "active" : "")" asp-controller="ProcesoRentaDevolucion" asp-action="Lista">Procesos administrativos</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Inspeccion" ? "active" : "")" asp-controller="Inspeccion" asp-action="Lista">Inspecciones</a></li>
+                                    </ul>
+                                    <div class="underline"></div>
+                                </li>
+                            }
+                        }
+
                     </ul>
                 </div>
                 <ul class="navbar-nav">
                     @if (SignInManager.IsSignedIn(User))
                     {
                         <li class="nav-item">
-                            <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                            <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@UserManager.GetUserName(User) </a>
                         </li>
                         <li class="nav-item">
                             <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
@@ -61,22 +91,60 @@
                     else
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                            <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Iniciar sesión</a>
                         </li>
                     }
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+
+    <main role="main" class="container flex-grow-1 pb-3">
+        @RenderBody()
+    </main>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - RentACar - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="container" id="contentFooter">
+            <div id="infoFooter">
+                <div class="container" id="sobreNosotrosFooter">
+                    <h2>Sobre nosotros</h2>
+                    <p>En más de 5 años, hemos sido la opción confiable para quienes buscan vehículos modernos, precios justos y servicio 24/7 en Santo Domingo. Con oficinas estratégicas y un compromiso con la transparencia, hacemos que tu experiencia de alquiler sea segura, fácil y sin sorpresas.</p>
+                    <img src="/images/mastercard.svg" alt="Mastercard" />
+                    <img src="/images/visa.svg" alt="Visa" />
+                </div>
+                <div class="container" id="contactanosFooter">
+                    <h2>Contáctanos</h2>
+                    <ul>
+                        <li>
+                            <p><i class="bi bi-telephone-fill"></i>(809)-777-5555</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><i class="bi bi-geo-alt-fill"></i>C. Rafael Augusto Sánchez 2, Santo Domingo</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><i class="bi bi-envelope-fill"></i>contactanos@carrentalrd.com</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><i class="bi bi-clock-fill"></i>Mon - Sat 8.00 am - 06.00 pm</p>
+                        </li>
+                    </ul>
+                    <div id="redesSociales">
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.threads.net/?hl=es-la"><i class="bi bi-threads"></i></a>
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/?lang=es"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://x.com/?lang=es"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; Copyright Car Rentals - 2025</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
