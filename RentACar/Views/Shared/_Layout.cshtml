@@ -27,18 +27,6 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "VehiclesPage" ? "active" : "")" asp-area="" asp-controller="VehiclesPage" asp-action="Vehiculos">Vehículos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "OfficesPage" ? "active" : "")" asp-area="" asp-controller="OfficesPage" asp-action="Oficinas">Oficinas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "ContacUsPage" ? "active" : "")" asp-area="" asp-controller="ContactUsPage" asp-action="Contactanos">Contáctanos</a>
-                        </li>
 
                         @if (SignInManager.IsSignedIn(User))
                         {
@@ -70,6 +58,20 @@
                                         <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Inspeccion" ? "active" : "")" asp-controller="Inspeccion" asp-action="Lista">Inspecciones</a></li>
                                     </ul>
                                     <div class="underline"></div>
+                                </li>
+                            } else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "VehiclesPage" ? "active" : "")" asp-area="" asp-controller="VehiclesPage" asp-action="Vehiculos">Vehículos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "OfficesPage" ? "active" : "")" asp-area="" asp-controller="OfficesPage" asp-action="Oficinas">Oficinas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "ContacUsPage" ? "active" : "")" asp-area="" asp-controller="ContactUsPage" asp-action="Contactanos">Contáctanos</a>
                                 </li>
                             }
                         }
