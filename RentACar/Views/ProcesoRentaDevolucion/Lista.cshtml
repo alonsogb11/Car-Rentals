@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<RentACar.Models.ProcesoRentaDevolucion>;
+
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Procesos activos de renta</h2>
+        <a asp-controller="ProcesoRentaDevolucion" asp-action="Nuevo" class="btn btn-primary mb-3">Nuevo</a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Empleado</th>
+                    <th>Vehículo</th>
+                    <th>Cliente</th>
+                    <th>Fecha de renta</th>
+                    <th>Fecha de devolución</th>
+                    <th>Monto por día</th>
+                    <th>Cantitad de días</th>
+                    <th>Comentario</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.EmpleadoId</td>
+                        <td>@item.VehiculoId</td>
+                        <td>@item.ClienteId</td>
+                        <td>@item.FechaRenta</td>
+                        <td>@item.FechaDevolucion</td>
+                        <td>@item.MontoXDia</td>
+                        <td>@item.CantidadDias</td>
+                        <td>@item.Comentario</td>
+                        <td>@item.Estado</td>
+                        <td>
+                            <a asp-controller="ProcesoRentaDevolucion" asp-action="Editar" asp-route-Id="@item.Id" class="btn btn-success">Editar</a>
+                            <a asp-controller="ProcesoRentaDevolucion" asp-action="Eliminar" asp-route-Id="@item.Id" onclick="return confirmar()" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmar() {
+            return confirm("¿Estás seguro de eliminar este proceso?")
+        }
+    </script>
+}

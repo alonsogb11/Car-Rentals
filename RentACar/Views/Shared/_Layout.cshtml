@@ -54,7 +54,7 @@
                                     <ul class="dropdown-menu" aria-labelledby="procesosAdministrativosDropdown">
                                         <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Cliente" ? "active" : "")" asp-controller="Cliente" asp-action="Lista">Clientes</a></li>
                                         <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Empleado" ? "active" : "")" asp-controller="Empleado" asp-action="Lista">Empleados</a></li>
-                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "ProcesoRentaDevolucion" ? "active" : "")" asp-controller="ProcesoRentaDevolucion" asp-action="Lista">Procesos administrativos</a></li>
+                                        <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "ProcesoRentaDevolucion" ? "active" : "")" asp-controller="ProcesoRentaDevolucion" asp-action="Lista">Procesos de renta</a></li>
                                         <li><a class="dropdown-item @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Inspeccion" ? "active" : "")" asp-controller="Inspeccion" asp-action="Lista">Inspecciones</a></li>
                                     </ul>
                                     <div class="underline"></div>
