@@ -9,8 +9,8 @@
         public required Vehiculo Vehiculo { get; set; }
         public int ClienteId { get; set; }
         public required Cliente Cliente { get; set; }
-        public DateOnly FechaRenta { get; set; }
-        public DateOnly FechaDevolucion { get; set; }
+        public DateTime FechaRenta { get; set; }
+        public DateTime FechaDevolucion { get; set; }
         public decimal MontoXDia { get; set; }
         public int CantidadDias { get; set; }
         public string Comentario { get; set; } = "";

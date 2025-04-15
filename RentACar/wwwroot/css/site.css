@@ -203,3 +203,26 @@ i {
     font-size: 2vh;
     margin-right: 1.5vh;
 }
+
+.imagenPrincipal {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#titulo {
+    position: absolute;
+    top: 170px;
+    color: white;
+    text-shadow: 0px 0px 16px #000000;
+    white-space: normal;
+    width: 40%;
+    left: 400px;
+    font-weight: 700;
+    font-family: 'Lato';
+}
+
+.hola {
+    color: #f59e0b;
+    font-style: italic;
+    text-decoration: underline;
+}

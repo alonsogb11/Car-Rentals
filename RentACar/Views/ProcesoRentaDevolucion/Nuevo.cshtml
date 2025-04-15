@@ -11,33 +11,33 @@
         <h2>Nuevo proceso de renta</h2>
         <form asp-controller="ProcesoRentaDevolucion" asp-action="Nuevo" method="post">
             <div class="mb-3">
-                <label>Tipo</label>
+                <label>Empleado encargado del proceso</label>
                 <select class="form-control" asp-for="EmpleadoId" asp-items="ViewBag.Empleados">
-                    <option value="">Seleccione el empleado encargado del proceso...</option>
+                    <option value="">Seleccione...</option>
                 </select>
                 <span asp-validation-for="EmpleadoId" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label>Tipo</label>
+                <label>Vehiculo a rentar</label>
                 <select class="form-control" asp-for="VehiculoId" asp-items="ViewBag.Vehiculos">
-                    <option value="">Seleccione el vehículo a rentar...</option>
+                    <option value="">Seleccione...</option>
                 </select>
                 <span asp-validation-for="VehiculoId" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label>Tipo</label>
+                <label>Cliente</label>
                 <select class="form-control" asp-for="ClienteId" asp-items="ViewBag.Clientes">
-                    <option value="">Seleccione el cliente...</option>
+                    <option value="">Seleccione...</option>
                 </select>
                 <span asp-validation-for="ClienteId" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label>Fecha de renta</label>
-                <input class="form-control" asp-for="FechaRenta" type="datetime" />
+                <input class="form-control" asp-for="FechaRenta" type="date" value="" />
             </div>
             <div class="mb-3">
                 <label>Fecha plasmada para devolución de vehículo</label>
-                <input class="form-control" asp-for="FechaDevolucion" type="datetime" />
+                <input class="form-control" asp-for="FechaDevolucion" type="date" value="" />
             </div>
             <div class="mb-3">
                 <label>Monto a ganar por día de renta</label>
@@ -48,7 +48,7 @@
                 <input class="form-control" asp-for="CantidadDias" type="number" />
             </div>
             <div class="mb-3">
-                <label>Algún comentario?</label>
+                <label>Título de la renta</label>
                 <input class="form-control" asp-for="Comentario" type="text" />
             </div>
             <div class="mb-3">

@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model RentACar.Models.Inspeccion
+
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Nuevo proceso de inspección</h2>
+        <form asp-controller="Inspeccion" asp-action="Nuevo" method="post">
+            <div class="mb-3">
+                <label>Renta relacionada</label>
+                <select class="form-control" asp-for="ProcesoRentaDevolucionId" asp-items="ViewBag.ProcesosRentaDevolucion">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="ProcesoRentaDevolucionId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Vehiculo de la inspección</label>
+                <select class="form-control" asp-for="VehiculoId" asp-items="ViewBag.Vehiculos">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="VehiculoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Cliente</label>
+                <select class="form-control" asp-for="ClienteId" asp-items="ViewBag.Clientes">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="ClienteId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Cantidad de combustible</label>
+                <select class="form-control" asp-for="CantCombustible" asp-items="ViewBag.CantCombustibles"></select>
+            </div>
+            <div class="form-check">
+                <label>Tiene algún rayón?</label>
+                <input class="form-check-input" asp-for="TieneRayones" />
+            </div>
+            <div class="form-check">
+                <label>Tiene su goma repuesta?</label>
+                <input class="form-check-input" asp-for="TieneGomaRepuesta" />
+            </div>
+            <div class="form-check">
+                <label>Tiene su gato?</label>
+                <input class="form-check-input" asp-for="TieneGato" />
+            </div>
+            <div class="form-check">
+                <label>Tiene algún roto en el cristal?</label>
+                <input class="form-check-input" asp-for="TieneCristalRoto" />
+            </div>
+            <div class="mb-3">
+                <label>Fecha realizada la inspección</label>
+                <input class="form-control" asp-for="FechaInspeccion" type="date" value="" />
+            </div>
+            <div class="mb-3">
+                <label>Empleado encargado</label>
+                <select class="form-control" asp-for="EmpleadoId" asp-items="ViewBag.Empleados">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="EmpleadoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Estado</label>
+                <select class="form-control" asp-for="Estado" asp-items="ViewBag.Estados"></select>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary mb-3" type="submit">Guardar</button>
+                <a asp-controller="Inspeccion" asp-action="Lista" class="btn btn-warning mb-3">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -4,3 +4,62 @@
 @{
 }
 
+@model RentACar.Models.ProcesoRentaDevolucion
+
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Editar proceso de renta</h2>
+        <form asp-controller="ProcesoRentaDevolucion" asp-action="Editar" method="post">
+            <input asp-for="Id" type="hidden" />
+            <div class="mb-3">
+                <label>Empleado encargado del proceso</label>
+                <select class="form-control" asp-for="EmpleadoId" asp-items="ViewBag.Empleados">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="EmpleadoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Vehiculo a rentar</label>
+                <select class="form-control" asp-for="VehiculoId" asp-items="ViewBag.Vehiculos">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="VehiculoId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Cliente</label>
+                <select class="form-control" asp-for="ClienteId" asp-items="ViewBag.Clientes">
+                    <option value="">Seleccione...</option>
+                </select>
+                <span asp-validation-for="ClienteId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label>Fecha de renta</label>
+                <input class="form-control" asp-for="FechaRenta" type="date" value="" />
+            </div>
+            <div class="mb-3">
+                <label>Fecha plasmada para devolución de vehículo</label>
+                <input class="form-control" asp-for="FechaDevolucion" type="date" value="" />
+            </div>
+            <div class="mb-3">
+                <label>Monto a ganar por día de renta</label>
+                <input class="form-control" asp-for="MontoXDia" type="text" />
+            </div>
+            <div class="mb-3">
+                <label>Cantidad de días que se rentará el vehículo</label>
+                <input class="form-control" asp-for="CantidadDias" type="number" />
+            </div>
+            <div class="mb-3">
+                <label>Título de la renta</label>
+                <input class="form-control" asp-for="Comentario" type="text" />
+            </div>
+            <div class="mb-3">
+                <label>Estado</label>
+                <select class="form-control" asp-for="Estado" asp-items="ViewBag.Estados"></select>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary mb-3" type="submit">Guardar</button>
+                <a asp-controller="ProcesoRentaDevolucion" asp-action="Lista" class="btn btn-warning mb-3">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>

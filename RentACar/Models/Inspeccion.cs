@@ -23,7 +23,7 @@
         public bool TieneGomaRepuesta { get; set; }
         public bool TieneGato { get; set; }
         public bool TieneCristalRoto { get; set; }
-        public DateOnly FechaInspeccion { get; set; }
+        public DateTime FechaInspeccion { get; set; }
         public int EmpleadoId { get; set; }
         public required Empleado Empleado { get; set; }
         public Estado Estado { get; set; }

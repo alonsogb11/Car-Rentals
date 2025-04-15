@@ -1,0 +1,60 @@
+﻿
+
+@model List<RentACar.Models.Inspeccion>;
+
+<div class="row">
+    <div class="">
+        <h2>Inspecciones</h2>
+        <a asp-controller="Inspeccion" asp-action="Nuevo" class="btn btn-primary mb-3">Nuevo</a>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Renta</th>
+                    <th>Vehículo</th>
+                    <th>Cliente</th>
+                    <th>Combustible</th>
+                    <th>Rayones</th>
+                    <th>Goma</th>
+                    <th>Gato</th>
+                    <th>Cristal roto</th>
+                    <th>Fecha</th>
+                    <th>Empleado</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>#@item.ProcesoRentaDevolucionId</td>
+                        <td>@item.Vehiculo.Descripcion</td>
+                        <td>@item.Cliente.Nombre</td>
+                        <td>@item.CantCombustible</td>
+                        <td>@(item.TieneRayones ? "Sí" : "No")</td>
+                        <td>@(item.TieneGomaRepuesta ? "Sí" : "No")</td>
+                        <td>@(item.TieneGato ? "Sí" : "No")</td>
+                        <td>@(item.TieneCristalRoto ? "Sí" : "No")</td>
+                        <td>@item.FechaInspeccion</td>
+                        <td>@item.Empleado.Nombre</td>
+                        <td>@item.Estado</td>
+                        <td>
+                            <a asp-controller="Inspeccion" asp-action="Editar" asp-route-Id="@item.Id" class="btn btn-success">Editar</a>
+                            <a asp-controller="Inspeccion" asp-action="Eliminar" asp-route-Id="@item.Id" onclick="return confirmar()" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmar() {
+            return confirm("¿Estás seguro de eliminar este proceso?")
+        }
+    </script>
+}

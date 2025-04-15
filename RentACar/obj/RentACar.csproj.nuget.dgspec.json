@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\RentACar.csproj": {}
+    "C:\\Users\\MSI\\Source\\Repos\\CarRentals\\RentACar\\RentACar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\RentACar.csproj": {
+    "C:\\Users\\MSI\\Source\\Repos\\CarRentals\\RentACar\\RentACar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\RentACar.csproj",
+        "projectUniqueName": "C:\\Users\\MSI\\Source\\Repos\\CarRentals\\RentACar\\RentACar.csproj",
         "projectName": "RentACar",
-        "projectPath": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\RentACar.csproj",
+        "projectPath": "C:\\Users\\MSI\\Source\\Repos\\CarRentals\\RentACar\\RentACar.csproj",
         "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MSI\\source\\repos\\Proyecto-Propietaria\\RentACar\\obj\\",
+        "outputPath": "C:\\Users\\MSI\\Source\\Repos\\CarRentals\\RentACar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "A:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

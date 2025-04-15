@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\2023Kia.jpg
 wwwroot\images\carRentalsDGrey.png
 wwwroot\images\carRentalsLogo.png
 wwwroot\images\mastercard.svg
